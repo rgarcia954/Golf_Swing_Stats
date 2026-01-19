@@ -124,10 +124,14 @@ def process_golf_stats(input_file, output_file, excluded_rows=None):
 if __name__ == "__main__":
     # Exclude row 8 (the outlier with very low values)
     excluded_rows = [8]
-    
+
     process_golf_stats(
-        input_file='swingcaddie_6I.csv',
-        output_file='golf_stats_analysis.xlsx',
+        # Prompt for input file
+        input_file = input("Enter the path to the input CSV file: ").strip(),
+
+        # Prompt for output file
+        output_file = input("Enter the name for the output Excel file: ").strip(),
+
         excluded_rows=excluded_rows
     )
     
