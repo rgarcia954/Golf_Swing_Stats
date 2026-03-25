@@ -1,3 +1,5 @@
 *.xlsx
 *.csv
+*.txt
 archive/
+.gitattributes
